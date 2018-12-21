@@ -141,8 +141,8 @@
   > 内容|内容|内容  
 * 第二行分割表头和内容，\-有一个就行，为了对齐，多加了几个。  
   文字默认居左  
-  \-两边加\：表示文字居中  
-  \-右边加\：表示文字居右  
+  \-两边加：表示文字居中  
+  \-右边加：表示文字居右  
   *注意：原生的语法两边都要用 | 包起来。此处省略*[^2]  
   
   姓名|性别|年龄|爱好  
@@ -153,15 +153,31 @@
 ## 代码
 * \`单行代码\` --> `单行代码`  
   单行代码：代码之间分别用一个反引号包起来  
+  \```  
+  多行代码  
+  多行代码  
+  \```  
   ```
   多行代码
   多行代码
   ```
+  \```java  
+    public static void main(String[] args) {  
+        System.out.println("hello world");  
+    }  
+  \```  
   ```java
     public static void main(String[] args) {
         System.out.println("hello world");
     }
   ```
+  \```javascript  
+    var num = 0;  
+    for (var i = 0; i < 5; i++) {  
+        num+=i;  
+    }  
+    console.log("hello world");  
+  \```  
   ```javascript
     var num = 0;
     for (var i = 0; i < 5; i++) {
@@ -169,7 +185,7 @@
     }
     console.log("hello world");
   ```
-  根据不同的语言配置不同的代码着色  
+  根据不同的语言配置不同的代码着色，部分支持（如：[boostnote](https://boostnote.io/ "https://boostnote.io/")，[StackEdit](https://stackedit.io/app&#35; "https://stackedit.io/app&#35;")）支持这种语法，github不支持  
   *注意：代码之间分别用三个反引号包起来，且两边的反引号单独占一行*[^1]  
   
 ##  流程图
@@ -180,15 +196,17 @@ graph TD;
   B-->D;
   C-->D;
 ```
-boostnote支持这种语法，github不支持  
+部分支持（如：[boostnote](https://boostnote.io/ "https://boostnote.io/")，[StackEdit](https://stackedit.io/app&#35; "https://stackedit.io/app&#35;")）支持这种语法，github不支持  
 
 ## [锚点](#标题)  
-[Jump by a header in a note · BoostIO/Boostnote Wiki · GitHub](https://github.com/BoostIO/Boostnote/wiki/Jump-by-a-header-in-a-note)  
+[Jump by a header in a note · BoostIO/Boostnote Wiki · GitHub](https://github.com/BoostIO/Boostnote/wiki/Jump-by-a-header-in-a-note "https://github.com/BoostIO/Boostnote/wiki/Jump-by-a-header-in-a-note")  
 
 ## 脚注
-* 注意\[^2\] --> 注意[^2]  
-  [^2]: 脚注
-  boostnote支持这种语法，github不支持
+* 注意\[^2\]
+  \[^2\]: 脚注  
+  注意[^2]  
+  [^2]: 脚注  
+  部分支持（如：[boostnote](https://boostnote.io/ "https://boostnote.io/")，[StackEdit](https://stackedit.io/app&#35; "https://stackedit.io/app&#35;")）支持这种语法，github不支持  
 
 > 参考文档  
 > [Markdown] <https://www.appinn.com/markdown/index.html>  
