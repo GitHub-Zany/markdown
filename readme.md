@@ -198,7 +198,9 @@ graph TD;
 ```
 部分支持（如：[boostnote](https://boostnote.io/ "https://boostnote.io/")，[StackEdit](https://stackedit.io/app&#35; "https://stackedit.io/app&#35;")）支持这种语法，github不支持  
 
-## [锚点](#标题)  
+## 锚点  
+* \[锚点名称\](目标) --> [锚点](#标题)  
+  *注意：锚点的目标必须是标题的名称，如果存在多个同名标题则跳转第一个标题。*  
 [Jump by a header in a note · BoostIO/Boostnote Wiki · GitHub](https://github.com/BoostIO/Boostnote/wiki/Jump-by-a-header-in-a-note "https://github.com/BoostIO/Boostnote/wiki/Jump-by-a-header-in-a-note")  
 
 ## 脚注
